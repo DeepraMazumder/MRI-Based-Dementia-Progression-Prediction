@@ -1,7 +1,7 @@
 # MRI-Based-Dementia-Progression-Prediction
 
 ## Project Overview
-The *MRI-Based-Dementia-Progression-Prediction* project aims to predict the progression of dementia in patients based on MRI data and other clinical features. It applies machine learning techniques, including **One-vs-Rest (OvR)** and **One-vs-One (OvO)** classifiers, particularly using **Support Vector Machines (SVM)**, to distinguish between three groups: *NonDemented*, *Demented*, and *Converted*. The project focuses on utilizing brain MRI imaging as a key input to predict if a patient will progress from mild cognitive impairment to dementia.
+The *MRI-Based-Dementia-Progression-Prediction* project aims to predict the progression of dementia in patients based on MRI data and other clinical features. It applies machine learning techniques, including **One-vs-Rest (OvR)** and **One-vs-One (OvO)** classifiers, as well as **Support Vector Machines (SVM)**, to distinguish between three groups: *NonDemented*, *Demented*, and *Converted*. The project focuses on utilizing brain MRI imaging as a key input to predict if a patient will progress from mild cognitive impairment to dementia.
 
 The dataset used for this project consists of longitudinal MRI data of 150 subjects, aged 60 to 96, with over 370 imaging sessions. These subjects include both non-demented and demented individuals, providing a comprehensive dataset for training and evaluation.
 
@@ -58,17 +58,22 @@ The project explores the dataset through various visualizations and statistics:
 ## Modeling
 
 ### **One-vs-Rest Classifier (OvR)**
-The **One-vs-Rest** strategy was used for multi-label classification:
 
-- Trained an OvR classifier with **SVM (Support Vector Machine)**.
-- Evaluated the performance using **accuracy**, **precision**, **recall**, and **F1-score**.
+- Trained an OvR classifier for multi-label classification.
+- Evaluated the performance using **accuracy**, **precision**, **recall**, **F1-score** and **confusion matrix**.
 - Computed the **ROC-AUC** for each class and visualized the ROC curve.
 
 ### **One-vs-One Classifier (OvO)**
-The **One-vs-One** strategy was also applied to the dataset:
 
-- Each class was paired with others to fit multiple classifiers, and predictions were aggregated to select the final class.
-- Evaluated the model using a **confusion matrix** and **classification metrics**.
+- Trained an OvO classifier for multi-label classification.
+- Evaluated the performance using **accuracy**, **precision**, **recall**, **F1-score** and **confusion matrix**.
+- Computed the **ROC-AUC** for each class and visualized the ROC curve.
+
+### **SVM Classifier (OvR)**
+
+- Trained a SVM classifier for multi-label classification.
+- Evaluated the performance using **accuracy**, **precision**, **recall**, **F1-score** and **confusion matrix**.
+- Computed the **ROC-AUC** for each class and visualized the ROC curve.
 
 ---
 
@@ -76,18 +81,23 @@ The **One-vs-One** strategy was also applied to the dataset:
 The project evaluated different classification strategies:
 
 - **One-vs-Rest Classifier**:
-  - **Accuracy**: XX%
-  - **Precision**: XX%
-  - **Recall**: XX%
-  - **F1 Score**: XX%
+  - **Accuracy**: 89%
+  - **Precision**: 90%
+  - **Recall**: 89%
+  - **F1 Score**: 85%
   
 - **One-vs-One Classifier**:
-  - **Accuracy**: XX%
-  - **Confusion Matrix**: Visualized using Seaborn
-  
-### Support Vectors
-Identified the samples that served as support vectors for the SVM model, providing insight into the critical cases that define the decision boundaries between classes.
+  - **Accuracy**: 87%
+  - **Precision**: 86%
+  - **Recall**: 87%
+  - **F1 Score**: 87%
 
+- **SVM Classifier**:
+  - **Accuracy**: 87%
+  - **Precision**: 86%
+  - **Recall**: 87%
+  - **F1 Score**: 87%
+  
 ---
 
 ## Contributing
