@@ -5,8 +5,6 @@ The *MRI-Based-Dementia-Progression-Prediction* project aims to predict the prog
 
 The dataset used for this project consists of longitudinal MRI data of 150 subjects, aged 60 to 96, with over 370 imaging sessions. These subjects include both non-demented and demented individuals, providing a comprehensive dataset for training and evaluation.
 
----
-
 ## Installation
 To run the project locally, follow these steps:
 
@@ -18,8 +16,6 @@ To run the project locally, follow these steps:
 
 3. Install the required dependencies:
    - `pip install --upgrade -r requirements.txt`
-
----
 
 ## Dataset
 The dataset consists of the following key features:
@@ -36,8 +32,6 @@ The dataset consists of the following key features:
 - **nWBV**: Normalized whole-brain volume (as a percentage).
 - **ASF**: Atlas scaling factor.
 
----
-
 ## Exploratory Data Analysis (EDA)
 The project explores the dataset through various visualizations and statistics:
 
@@ -46,14 +40,10 @@ The project explores the dataset through various visualizations and statistics:
 - **Dementia Frequency**: Investigates the number of subjects diagnosed with dementia and their progression over time.
 - **Correlation Heatmap**: Displays correlations between the clinical and MRI features.
 
----
-
 ## Pre-processing and Feature Engineering
 - **Data Cleaning**: Removing unwanted columns, handling null values, and encoding categorical variables.
 - **Feature Scaling**: Scaling MRI-derived volumes and clinical features.
 - **Target Variable Encoding**: Encoding the group labels (*NonDemented*, *Demented*, *Converted*) for model training.
-
----
 
 ## Modeling
 
@@ -74,8 +64,6 @@ The project explores the dataset through various visualizations and statistics:
 - Trained a SVM classifier for multi-label classification.
 - Evaluated the performance using **accuracy**, **precision**, **recall**, **F1-score** and **confusion matrix**.
 - Computed the **ROC-AUC** for each class and visualized the ROC curve.
-
----
 
 ## **Results**
 The project evaluated different classification strategies:
@@ -98,8 +86,6 @@ The project evaluated different classification strategies:
   - **Recall**: 87%
   - **F1 Score**: 87%
   
----
-
 ## Contributing
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
