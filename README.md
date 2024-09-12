@@ -1,7 +1,7 @@
 # MRI-Based-Dementia-Progression-Prediction
 
 ## Project Overview
-The *MRI-Based-Dementia-Progression-Prediction* project aims to predict the progression of dementia in patients based on MRI data and other clinical features. It applies machine learning techniques, including **One-vs-Rest (OvR)** and **One-vs-One (OvO)** classifiers, as well as **Support Vector Machines (SVM)**, to distinguish between three groups: *NonDemented*, *Demented*, and *Converted*. The project focuses on utilizing brain MRI imaging as a key input to predict if a patient will progress from mild cognitive impairment to dementia.
+The **MRI-Based-Dementia-Progression-Prediction** project aims to predict the progression of dementia in patients based on MRI data and other clinical features. It applies machine learning techniques, including **One-vs-Rest (OvR)** and **One-vs-One (OvO)** classifiers, as well as **Support Vector Machines (SVM)**, to distinguish between three groups: *NonDemented*, *Demented*, and *Converted*. The project focuses on utilizing brain MRI imaging as a key input to predict if a patient will progress from mild cognitive impairment to dementia.
 
 The dataset used for this project consists of longitudinal MRI data of 150 subjects, aged 60 to 96, with over 370 imaging sessions. These subjects include both non-demented and demented individuals, providing a comprehensive dataset for training and evaluation.
 
